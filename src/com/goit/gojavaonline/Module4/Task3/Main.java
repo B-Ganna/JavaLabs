@@ -1,16 +1,37 @@
 package com.goit.gojavaonline.Module4.Task3;
 
+import java.awt.*;
+import java.util.Scanner;
 
 public class Main {
-    public static void main (String[]args){
-        Point a = new Point();
-        System.out.println("Задайте координаты первой точки: ");
-        a.inputPoint();
-        Point b = new Point();
-        System.out.println("Задайте координаты второй точки: ");
-        b.inputPoint();
+    public static double readDouble (String message){
+        while(true)
 
-        System.out.println("Расстояние между точками: "+b.getDistance(a));
-
+        {
+            try {
+                System.out.println(message);
+                Scanner scanner = new Scanner(System.in);
+                return scanner.nextDouble();
+            } catch (Exception E) {
+                System.out.println("Input is wrong");
+            }
+        }
     }
-}
+
+    public static void main (String[]args){
+
+
+        double coordXpoint1 = readDouble ("Enter coordinate X of Point first: ");
+        double coordYpoint1 = readDouble ("Enter coordinate Y of Point first: ");
+        double coordXpoint2 = readDouble ("Enter coordinate X of Point second: ");
+        double coordYpoint2 = readDouble ("Enter coordinate Y of Point second: ");
+
+
+        Point first = new Point(coordXpoint1, coordYpoint1);
+        Point second = new Point(coordXpoint2, coordYpoint2);
+
+        PointDistanceCounter pointDistanceCounter = new PointDistanceCounter();
+        double distance = pointDistanceCounter.countDistance(first,second);
+
+        System.out.println("Distance between two Points: " + distance);
+    }
