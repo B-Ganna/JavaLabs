@@ -1,6 +1,5 @@
 package com.goit.gojavaonline.module4.task3;
 
-import java.awt.*;
 import java.util.Scanner;
 
 public class Main {
@@ -21,14 +20,14 @@ public class Main {
     public static void main(String[] args) {
 
 
-        double coordXpoint1 = readDouble("Enter coordinate X of Point first: ");
-        double coordYpoint1 = readDouble("Enter coordinate Y of Point first: ");
-        double coordXpoint2 = readDouble("Enter coordinate X of Point second: ");
-        double coordYpoint2 = readDouble("Enter coordinate Y of Point second: ");
+        double Xpoint1 = readDouble("Enter coordinate X of Point first: ");
+        double Ypoint1 = readDouble("Enter coordinate Y of Point first: ");
+        double Xpoint2 = readDouble("Enter coordinate X of Point second: ");
+        double Ypoint2 = readDouble("Enter coordinate Y of Point second: ");
 
 
-        Point first = new Point(coordXpoint1, coordYpoint1);
-        Point second = new Point(coordXpoint2, coordYpoint2);
+        Point first = new Point(Xpoint1, Ypoint1);
+        Point second = new Point(Xpoint2, Ypoint2);
 
         PointDistanceCounter pointDistanceCounter = new PointDistanceCounter();
         double distance = pointDistanceCounter.countDistance(first, second);

@@ -5,31 +5,31 @@ package com.goit.gojavaonline.module4.task3;
 
 public class Point {
 
-    private double coordinateX;
-    private double coordinateY;
+    private double X;
+    private double Y;
 
 
 
 
-    public double getCoordinateX() {
-        return coordinateX;
+    public double getX() {
+        return X;
     }
 
-    public void setCoordinateX(double coordinateX) {
-        this.coordinateX = coordinateX;
+    public void setX(double X) {
+        this.X = X;
     }
 
-    public double getCoordinateY() {
-        return coordinateY;
+    public double getY() {
+        return Y;
     }
 
-    public void setCoordinateY(double coordinateY) {
-        this.coordinateY = coordinateY;
+    public void setY(double Y) {
+        this.Y = Y;
     }
 
-    public Point(double coordinateX, double coordinateY) {
-            this.coordinateX = coordinateX;
-            this.coordinateY = coordinateY;
+    public Point(double X, double Y) {
+            this.X = X;
+            this.Y = Y;
     }
 
 

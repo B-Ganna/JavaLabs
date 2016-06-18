@@ -1,4 +1,4 @@
-package com.goit.gojavaonline.Module3.uml1;
+package com.goit.gojavaonline.module3.uml1;
 
 
 import java.util.List;

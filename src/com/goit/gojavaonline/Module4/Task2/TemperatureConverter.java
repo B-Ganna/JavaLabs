@@ -1,4 +1,4 @@
-package com.goit.gojavaonline.Module4.Task2;
+package com.goit.gojavaonline.module4.task2;
 
 
 import java.util.Scanner;
