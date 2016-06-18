@@ -7,7 +7,7 @@ import com.goit.gojavaonline.module4.task1.triangle.TriangleMeasurer;
 
 import java.util.Scanner;
 
-public class Main {
+public class Runner {
 
 
     public static double readDouble(String message) {
