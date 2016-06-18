@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f1a8d5d1-4ad4-4e99-84e5-33fbde5bf585" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/goit/gojavaonline/Module4/Task1/Triangle/Main.java" afterPath="$PROJECT_DIR$/src/com/goit/gojavaonline/Module4/Task1/Triangle/Main.java" />
     </list>
     <ignored path="HomeWorks.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -817,7 +816,7 @@
       <workItem from="1466175204745" duration="3735000" />
       <workItem from="1466192587445" duration="378000" />
       <workItem from="1466237973383" duration="658000" />
-      <workItem from="1466238651098" duration="6472000" />
+      <workItem from="1466238651098" duration="6493000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1465662962057</created>
@@ -917,11 +916,18 @@
       <option name="project" value="LOCAL" />
       <updated>1466254309728</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="third commit">
+      <created>1466254381241</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1466254381241</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57587000" />
+    <option name="totallyTimeSpent" value="57608000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
