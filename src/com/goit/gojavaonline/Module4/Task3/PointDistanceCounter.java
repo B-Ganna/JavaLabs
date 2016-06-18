@@ -1,4 +1,4 @@
-package com.goit.gojavaonline.Module4.Task3;
+package com.goit.gojavaonline.module4.task3;
 
 
 public class PointDistanceCounter {

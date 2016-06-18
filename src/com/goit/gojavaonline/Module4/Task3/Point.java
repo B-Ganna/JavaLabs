@@ -1,4 +1,4 @@
-package com.goit.gojavaonline.Module4.Task3;
+package com.goit.gojavaonline.module4.task3;
 
 
 
@@ -26,6 +26,14 @@ public class Point {
     public void setCoordinateY(double coordinateY) {
         this.coordinateY = coordinateY;
     }
+
+    public Point(double coordinateX, double coordinateY) {
+            this.coordinateX = coordinateX;
+            this.coordinateY = coordinateY;
+    }
+
+
+
 
 
 
