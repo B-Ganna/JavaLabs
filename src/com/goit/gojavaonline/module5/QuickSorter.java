@@ -16,7 +16,7 @@ public class QuickSorter {
     public int searchMax (int[]numbers) {
 
         int max = 0;
-        for (int i = 0; i < numbers.length; i++) {
+        for (int i = 0; i > numbers.length; i++) {
             if (max > numbers[i])
                 max = numbers[i];
         }
