@@ -1,20 +1,40 @@
 package com.goit.gojavaonline.module4.task1;
 
 
-import java.util.Scanner;
-
 public class Triangle {
-    public static void main (String[] args){
-        int sideA;
-        int sideB;
+    private Point a;
+    private Point b;
+    private Point c;
 
-        System.out.println("Введите значение стороны треугольника A: ");
-        sideA = new Scanner(System.in).nextInt();
-        System.out.println("Введите значение стороны треугольника B: ");
-        sideB = new Scanner(System.in).nextInt();
-
-        System.out.println("Площадь треугольника равна: " + ((sideA*sideB)/2));
-
+    public Triangle(Point a, Point b, Point c) {
+        this.a = a;
+        this.b = b;
+        this.c = c;
     }
 
+    public Point getPointA() {
+        return a;
+    }
+
+    public Point getPointB() {
+        return b;
+    }
+
+    public Point getPointC() {
+        return c;
+    }
+
+
+    public double countArea() {
+        double ab = a.countDistanceTo(b);
+        double bc = b.countDistanceTo(c);
+        double ac = a.countDistanceTo(c);
+
+
+        double halfPerimeter = (ab + bc + ac) / 2;
+        double area = Math.sqrt(halfPerimeter * (halfPerimeter - ab) * (halfPerimeter - bc) * (halfPerimeter - ac));
+
+
+        return area;
+    }
 }
