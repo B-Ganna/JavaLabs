@@ -1,25 +1,22 @@
 package com.goit.gojavaonline.module4.task2;
 
 
-import java.util.Scanner;
-
 public class TemperatureConverter {
+    public static double convertToC(double degreeF) {
+        return (degreeF - 32) * 5 / 9;
+    }
 
-    public static void main(String[] args){
-        double a;
-        double e;
-        int b = 32;
-        double c;
-        double f;
+    public static double convertToF(double degreeC) {
+        return (degreeC * 5 / 9) + 32;
+    }
 
-        System.out.println("Введите градусы по Цельсию: ");
-        a = new Scanner(System.in).nextDouble();
-        f = (a*9/5)+b;
-        System.out.println("Температура в градусах по Фаренгейту: " +f);
+    public static void main(String[] args) {
+        double f = 0;
+        double c = 0;
 
-        System.out.println("Введите градусы по Фаренгейту: ");
-        e = new Scanner(System.in).nextDouble();
-        c = (e-b)*5/9;
-        System.out.println("Температура в градусах по Цельсию: " +c);
+        System.out.println("Температура в градусах по Фаренгейту: " + convertToF(c));
+
+        System.out.println("Температура в градусах по Цельсию: " + convertToC(f));
+
     }
 }
