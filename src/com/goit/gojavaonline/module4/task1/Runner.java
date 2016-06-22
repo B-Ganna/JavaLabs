@@ -22,23 +22,59 @@ public class Runner {
 
             //вычисление площади треугольника
 
-            double XpointA = 0;//readDouble("Enter coordinate X of Point A: ");
-            double YpointA = 0;//readDouble("Enter coordinate Y of Point A: ");
-            double XpointB = 0;//readDouble("Enter coordinate X of Point B: ");
-            double YpointB = 2;//readDouble("Enter coordinate Y of Point B: ");
-            double XpointC = 3;//readDouble("Enter coordinate X of Point C: ");
-            double YpointС = 0;//readDouble("Enter coordinate Y of Point C: ");
+            double x1 = 0;//readDouble("Enter coordinate X of Point A: ");
+            double y1 = 0;//readDouble("Enter coordinate Y of Point A: ");
+            double x2 = 0;//readDouble("Enter coordinate X of Point B: ");
+            double y2 = 2;//readDouble("Enter coordinate Y of Point B: ");
+            double x3 = 3;//readDouble("Enter coordinate X of Point C: ");
+            double y3 = 0;//readDouble("Enter coordinate Y of Point C: ");
 
 
-            Point a = new Point(XpointA, YpointA);
-            Point b = new Point(XpointB, YpointB);
-            Point c = new Point(XpointC, YpointС);
+            Point a = new Point(x1, y1);
+            Point b = new Point(x2, y2);
+            Point c = new Point(x3, y3);
 
-            Triangle triangle = new Triangle(a,b,c);
+            Triangle triangle = new Triangle(a, b, c);
             System.out.println("Triangle area " + triangle.countArea());
+
+            // вычисление площади прямоугольника
+
+            double x4 = 0;
+            double y4 = 0;
+            double x5 = 0;
+            double y5 = 2;
+            double x6 = 0;
+            double y6 = 0;
+            double x7 = 3;
+            double y7 = 0;
+
+
+            Point e = new Point(x4, y4);
+            Point f = new Point(x5, y5);
+            Point g = new Point(x6, y6);
+            Point h = new Point(x7, y7);
+
+            Rectangle rectangle = new Rectangle(e, f, g, h);
+            System.out.println ("Rectangle area: "+ rectangle.countArea());
+
+            //вычисление площади круга
+            double x8 = 0;
+            double y8 = 0;
+            double x9 = 0;
+            double y9 = 2;
+
+            Point s = new Point(x8, y8);
+            Point n = new Point(x9, y9);
+
+            Circle circle = new Circle(s,n);
+            System.out.println ("Circle area: "+ circle.countArea());
+
         }
 
 
-    }
+
+
+
+}
 
 

@@ -1,7 +1,7 @@
 package com.goit.gojavaonline.module4.task2;
 
 
-public class TemperatureConverter {
+public class TemperatureUtils {
     public static double convertToC(double degreeF) {
         return (degreeF - 32) * 5 / 9;
     }
