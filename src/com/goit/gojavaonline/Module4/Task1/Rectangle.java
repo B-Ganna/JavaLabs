@@ -1,19 +1,42 @@
 package com.goit.gojavaonline.module4.task1;
 
 
-import java.util.Scanner;
 
 public class Rectangle {
-    public  static void main (String[] args){
-        int sideA;
-        int sideB;
 
-        System.out.println("Введите значение стороны прямоугольника A: ");
-        sideA = new Scanner(System.in).nextInt();
-        System.out.println("Введите значение стороны прямоугольника B: ");
-        sideB = new Scanner(System.in).nextInt();
+    private Point e;
+    private Point f;
+    private Point g;
+    private Point h;
 
-        System.out.println("Площадь прямоугольника равна: " + (sideA*sideB));
 
+    public  Rectangle (Point e, Point f, Point g, Point h) {
+        this.e = e;
+        this.f = f;
+        this.g = g;
+        this.h = h;
+    }
+    public Point getPointE() {
+        return e;
+    }
+    public Point getPointF() {
+        return f;
+    }
+    public Point getPointG() {
+        return g;
+    }
+    public Point getPointH() {
+        return h;
+    }
+
+
+    public double countArea() {
+        double ef = e.countDistanceTo(f);
+        double eh = e.countDistanceTo(h);
+
+
+        double area = ef *  eh;
+
+        return area;
     }
 }

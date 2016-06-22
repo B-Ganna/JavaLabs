@@ -1,16 +1,29 @@
 package com.goit.gojavaonline.module4.task1;
 
 
-import java.util.Scanner;
 
 public class Circle {
-    public  static void main (String[] args){
-        double radius;
+    private Point s;
+    private Point n;
 
-        System.out.println("Введите радиус круга: ");
-        radius = new Scanner(System.in).nextDouble();
+    public Circle(Point s, Point n) {
+        this.s = s;
+        this.n = n;
+    }
 
-        System.out.println("Площадь круга равна: " + Math.PI*Math.pow(radius, 2));
+    public Point getPointS() {
+        return s;
+    }
 
+    public Point getPointN() {
+        return n;
+    }
+
+    public double countArea() {
+        double radius = s.countDistanceTo(n);
+
+        double area = Math.PI * Math.pow(radius, 2);
+
+        return area;
     }
 }

@@ -3,7 +3,7 @@ package com.goit.gojavaonline.module5;
 public class ArrayUtils {
     public static int findMinimum(int[] array) {
         int min = array[0];
-        for (int i = 0; i != array.length; i++) {
+        for (int i = 0; i < array.length; i++) {
             if (min > array[i])
                 min = array[i];
         }
@@ -20,7 +20,9 @@ public class ArrayUtils {
     }
 
     public static int[] bubbleSort(int[] array) {
-            int i, j, temp = 0;
+            int i = 0;
+            int j = 0;
+            int temp = 0;
             for (i = 0; i<array.length-1;i++){
                 for (j = 0; j<array.length-1-i; j++){
                     if (array[j]>array[j+1]){
