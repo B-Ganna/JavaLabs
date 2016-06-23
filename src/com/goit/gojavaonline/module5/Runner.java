@@ -1,10 +1,6 @@
 package com.goit.gojavaonline.module5;
 
 
-import java.util.Arrays;
-
-import static com.goit.gojavaonline.module5.ArrayUtils.*;
-
 public class Runner {
 
     public static void main(String[] args) {
@@ -12,9 +8,14 @@ public class Runner {
 
         int[] array1 = new int[]{3, 9, 5, 2, 4, 6, 7};
 
+        Array array = new Array(array1);
 
-        System.out.println("Minimum is: " + findMinimum(array1));
-        System.out.println("Maximum is: " + findMaximum(array1));
-        System.out.println("Sorted array: " + Arrays.toString(bubbleSort(array1)));
+        System.out.println("Исходный массив: " + array);
+        System.out.println("Minimum is: " + array.findMinimum());
+        System.out.println("Maximum is: " + array.findMaximum());
+        array.sort();
+        System.out.println("Sorted array: " + array);
     }
 }
+
+
