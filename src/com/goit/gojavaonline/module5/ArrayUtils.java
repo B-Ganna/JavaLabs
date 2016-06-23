@@ -20,19 +20,20 @@ public class ArrayUtils {
     }
 
     public static int[] bubbleSort(int[] array) {
+        int[] b = array.clone();
             int i = 0;
             int j = 0;
             int temp = 0;
-            for (i = 0; i<array.length-1;i++){
-                for (j = 0; j<array.length-1-i; j++){
-                    if (array[j]>array[j+1]){
-                        temp=array[j];
-                        array[j] = array[j+1];
-                        array[j+1] = temp;
+            for (i = 0; i<b.length-1;i++){
+                for (j = 0; j<b.length-1-i; j++){
+                    if (b[j]>b[j+1]){
+                        temp=b[j];
+                        b[j] = b[j+1];
+                        b[j+1] = temp;
                     }
                 }
             }
-            return array;
+            return b;
         }
 
 

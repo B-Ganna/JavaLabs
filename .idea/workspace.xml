@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f1a8d5d1-4ad4-4e99-84e5-33fbde5bf585" name="Default" comment="fourth commit">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/goit/gojavaonline/Module4/Task1/Circle.java" afterPath="$PROJECT_DIR$/src/com/goit/gojavaonline/Module4/Task1/Circle.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/goit/gojavaonline/Module4/Task1/Rectangle.java" afterPath="$PROJECT_DIR$/src/com/goit/gojavaonline/Module4/Task1/Rectangle.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/goit/gojavaonline/module5/ArrayUtils.java" afterPath="$PROJECT_DIR$/src/com/goit/gojavaonline/module5/ArrayUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/goit/gojavaonline/module5/Runner.java" afterPath="$PROJECT_DIR$/src/com/goit/gojavaonline/module5/Runner.java" />
     </list>
     <ignored path="HomeWorks.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,7 +32,12 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
               <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-              <folding />
+              <folding>
+                <element signature="e#131#132#0" expanded="false" />
+                <element signature="e#176#177#0" expanded="false" />
+                <element signature="e#231#232#0" expanded="false" />
+                <element signature="e#276#277#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -41,8 +45,18 @@
       <file leaf-file-name="ArrayUtils.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/goit/gojavaonline/module5/ArrayUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+            <state relative-caret-position="52">
+              <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Module3.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Module3.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -61,9 +75,11 @@
       <file leaf-file-name="Runner.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/goit/gojavaonline/module5/Runner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="54" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
-              <folding />
+            <state relative-caret-position="119">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -71,9 +87,18 @@
       <file leaf-file-name="Rectangle.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/goit/gojavaonline/module4/task1/Rectangle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
+            <state relative-caret-position="544">
               <caret line="40" column="5" selection-start-line="12" selection-start-column="4" selection-end-line="40" selection-end-column="5" />
-              <folding />
+              <folding>
+                <element signature="e#336#337#0" expanded="false" />
+                <element signature="e#360#361#0" expanded="false" />
+                <element signature="e#391#392#0" expanded="false" />
+                <element signature="e#415#416#0" expanded="false" />
+                <element signature="e#446#447#0" expanded="false" />
+                <element signature="e#470#471#0" expanded="false" />
+                <element signature="e#501#502#0" expanded="false" />
+                <element signature="e#525#526#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -81,9 +106,16 @@
       <file leaf-file-name="Triangle.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/goit/gojavaonline/module4/task1/Triangle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
+            <state relative-caret-position="544">
               <caret line="38" column="5" selection-start-line="27" selection-start-column="4" selection-end-line="38" selection-end-column="5" />
-              <folding />
+              <folding>
+                <element signature="e#280#281#0" expanded="false" />
+                <element signature="e#304#305#0" expanded="false" />
+                <element signature="e#336#337#0" expanded="false" />
+                <element signature="e#360#361#0" expanded="false" />
+                <element signature="e#392#393#0" expanded="false" />
+                <element signature="e#416#417#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -91,9 +123,14 @@
       <file leaf-file-name="Point.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/goit/gojavaonline/module4/task1/Point.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
+            <state relative-caret-position="425">
               <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="e#224#225#0" expanded="false" />
+                <element signature="e#248#249#0" expanded="false" />
+                <element signature="e#276#277#0" expanded="false" />
+                <element signature="e#300#301#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -101,7 +138,7 @@
       <file leaf-file-name="Runner.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/goit/gojavaonline/module4/task1/Runner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
+            <state relative-caret-position="1173">
               <caret line="69" column="69" selection-start-line="69" selection-start-column="69" selection-end-line="69" selection-end-column="69" />
               <folding />
             </state>
@@ -113,7 +150,12 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="408">
               <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
-              <folding />
+              <folding>
+                <element signature="e#227#228#0" expanded="false" />
+                <element signature="e#251#252#0" expanded="false" />
+                <element signature="e#283#284#0" expanded="false" />
+                <element signature="e#307#308#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -183,11 +225,11 @@
         <option value="$PROJECT_DIR$/src/com/goit/gojavaonline/module5/QuickSorter.java" />
         <option value="$PROJECT_DIR$/src/com/goit/gojavaonline/module4/task2/TemperatureUtils.java" />
         <option value="$PROJECT_DIR$/HotKeys.readme" />
-        <option value="$PROJECT_DIR$/src/com/goit/gojavaonline/module5/Runner.java" />
         <option value="$PROJECT_DIR$/src/com/goit/gojavaonline/module4/task1/Side.java" />
         <option value="$PROJECT_DIR$/src/com/goit/gojavaonline/module4/task1/Rectangle.java" />
         <option value="$PROJECT_DIR$/src/com/goit/gojavaonline/module4/task1/Circle.java" />
         <option value="$PROJECT_DIR$/src/com/goit/gojavaonline/module4/task1/Runner.java" />
+        <option value="$PROJECT_DIR$/src/com/goit/gojavaonline/module5/Runner.java" />
         <option value="$PROJECT_DIR$/src/com/goit/gojavaonline/module5/ArrayUtils.java" />
       </list>
     </option>
@@ -229,6 +271,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -337,8 +381,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -786,7 +828,8 @@
       <workItem from="1466255472300" duration="16226000" />
       <workItem from="1466444677724" duration="8357000" />
       <workItem from="1466537257853" duration="851000" />
-      <workItem from="1466585380041" duration="10358000" />
+      <workItem from="1466585380041" duration="10741000" />
+      <workItem from="1466673868016" duration="2598000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1465662962057</created>
@@ -956,11 +999,18 @@
       <option name="project" value="LOCAL" />
       <updated>1466599318151</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="fourth commit">
+      <created>1466621602210</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1466621602210</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94219000" />
+    <option name="totallyTimeSpent" value="97200000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1059,7 +1109,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/goit/gojavaonline/Module4/Task3/Point1DistanceCounter.java" />
     <entry file="file://$PROJECT_DIR$/src/com/goit/gojavaonline/Module4/Task3/Point1.java" />
     <entry file="file://$PROJECT_DIR$/src/com/goit/gojavaonline/Module4/Task3/Point2.java" />
     <entry file="file://$PROJECT_DIR$/src/com/goit/gojavaonline/Module4/Task3/DistanceCounter.java" />
@@ -1225,7 +1274,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
-          <folding />
+          <folding>
+            <element signature="e#280#281#0" expanded="false" />
+            <element signature="e#304#305#0" expanded="false" />
+            <element signature="e#336#337#0" expanded="false" />
+            <element signature="e#360#361#0" expanded="false" />
+            <element signature="e#392#393#0" expanded="false" />
+            <element signature="e#416#417#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1245,35 +1301,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/goit/gojavaonline/module5/BubbleSorter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="5" selection-start-line="4" selection-start-column="4" selection-end-line="16" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/goit/gojavaonline/module5/QuickSorter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="22" column="19" selection-start-line="17" selection-start-column="8" selection-end-line="22" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/goit/gojavaonline/module4/task1/Side.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/goit/gojavaonline/module5/BubbleSorter.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/goit/gojavaonline/module5/QuickSorter.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/goit/gojavaonline/module4/task1/Side.java" />
     <entry file="file://$PROJECT_DIR$/src/com/goit/gojavaonline/module4/task1/Point.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
+        <state relative-caret-position="425">
           <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#224#225#0" expanded="false" />
+            <element signature="e#248#249#0" expanded="false" />
+            <element signature="e#276#277#0" expanded="false" />
+            <element signature="e#300#301#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1281,23 +1321,44 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-          <folding />
+          <folding>
+            <element signature="e#131#132#0" expanded="false" />
+            <element signature="e#176#177#0" expanded="false" />
+            <element signature="e#231#232#0" expanded="false" />
+            <element signature="e#276#277#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/goit/gojavaonline/module4/task1/Triangle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
+        <state relative-caret-position="544">
           <caret line="38" column="5" selection-start-line="27" selection-start-column="4" selection-end-line="38" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="e#280#281#0" expanded="false" />
+            <element signature="e#304#305#0" expanded="false" />
+            <element signature="e#336#337#0" expanded="false" />
+            <element signature="e#360#361#0" expanded="false" />
+            <element signature="e#392#393#0" expanded="false" />
+            <element signature="e#416#417#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/goit/gojavaonline/module4/task1/Rectangle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
+        <state relative-caret-position="544">
           <caret line="40" column="5" selection-start-line="12" selection-start-column="4" selection-end-line="40" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="e#336#337#0" expanded="false" />
+            <element signature="e#360#361#0" expanded="false" />
+            <element signature="e#391#392#0" expanded="false" />
+            <element signature="e#415#416#0" expanded="false" />
+            <element signature="e#446#447#0" expanded="false" />
+            <element signature="e#470#471#0" expanded="false" />
+            <element signature="e#501#502#0" expanded="false" />
+            <element signature="e#525#526#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1305,30 +1366,45 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
-          <folding />
+          <folding>
+            <element signature="e#227#228#0" expanded="false" />
+            <element signature="e#251#252#0" expanded="false" />
+            <element signature="e#283#284#0" expanded="false" />
+            <element signature="e#307#308#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/goit/gojavaonline/module4/task1/Runner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
+        <state relative-caret-position="1173">
           <caret line="69" column="69" selection-start-line="69" selection-start-column="69" selection-end-line="69" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Module3.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/goit/gojavaonline/module5/Runner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="54" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
-          <folding />
+        <state relative-caret-position="119">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/goit/gojavaonline/module5/ArrayUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+        <state relative-caret-position="52">
+          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
           <folding />
         </state>
       </provider>
