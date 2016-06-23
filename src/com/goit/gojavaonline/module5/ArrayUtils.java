@@ -20,28 +20,25 @@ public class ArrayUtils {
     }
 
     public static int[] bubbleSort(int[] array) {
-        int[] b = array.clone();
-            int i = 0;
-            int j = 0;
-            int temp = 0;
-            for (i = 0; i<b.length-1;i++){
-                for (j = 0; j<b.length-1-i; j++){
-                    if (b[j]>b[j+1]){
-                        temp=b[j];
-                        b[j] = b[j+1];
-                        b[j+1] = temp;
-                    }
+        int[] cloneArray = array.clone();
+
+        for (int i = 0; i < cloneArray.length - 1; i++) {
+            for (int j = 0; j < cloneArray.length - 1 - i; j++) {
+                if (cloneArray[j] > cloneArray[j + 1]) {
+                    int temp = cloneArray[j];
+                    cloneArray[j] = cloneArray[j + 1];
+                    cloneArray[j + 1] = temp;
                 }
             }
-            return b;
         }
-
+        return cloneArray;
+    }
 
 
     // TODO: 20.06.2016 выяснить как клонировать массив
 
 
-        // // TODO: 20.06.2016 найти и вернуть мин значение массива; читать про работу с массивам;  скалярные ссылочные типы
+    // // TODO: 20.06.2016 найти и вернуть мин значение массива; читать про работу с массивам;  скалярные ссылочные типы
 
-    }
+}
 
