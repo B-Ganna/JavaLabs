@@ -4,9 +4,8 @@ package com.goit.gojavaonline.module6.task1.module5Hw;
 import java.util.Scanner;
 
 
-
 public class Runner {
-    int size;
+
 
     public static void main(String[] args) {
 
@@ -16,23 +15,23 @@ public class Runner {
         int[] array1 = new int[size];
         Array array = new Array(array1);
 
-        if (size < 0) {
+        /*if (size < 0) {
             try {
-                throw new NegativeArraySizeException();
+                //throw new NegativeArraySizeException();
             } catch (NegativeArraySizeException e) {
                 System.out.println("Array size cannot be negative!!");
             }
-        }
+        }*/
         System.out.println("Enter array elements: ");
-        int i;
-        for (i = 0; i < size; i++) {
+
+        for (int i = 0; i < size; i++) {
             array1[i] = scanner.nextInt();
         }
-        if (array1[i] < 0) {
+        /*if (array1[i] < 0) {
             try {
                 throw new ArrayIndexOutOfBoundsException("Negative numbers are not allowed!!");
             } catch (ArrayIndexOutOfBoundsException e) {
-            }
+            }*/
 
             System.out.println("New array:" + array);
             System.out.println("Minimum is: " + array.findMinimum());
@@ -43,4 +42,3 @@ public class Runner {
         }
 
     }
-}
