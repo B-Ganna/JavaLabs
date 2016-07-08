@@ -1,8 +1,6 @@
 package com.goit.gojavaonline.module6.task1.module4Hw;
 
 
-
-
 public class Rectangle {
 
     private Point e;
@@ -11,21 +9,29 @@ public class Rectangle {
     private Point h;
 
 
-    public  Rectangle (Point e, Point f, Point g, Point h) {
+    public Rectangle(Point e, Point f, Point g, Point h) throws RectangleException {
         this.e = e;
         this.f = f;
         this.g = g;
         this.h = h;
+
+        boolean ok = false;
+        if (!ok)
+            throw new RectangleException();
     }
+
     public Point getPointE() {
         return e;
     }
+
     public Point getPointF() {
         return f;
     }
+
     public Point getPointG() {
         return g;
     }
+
     public Point getPointH() {
         return h;
     }
@@ -36,7 +42,7 @@ public class Rectangle {
         double eh = e.countDistanceTo(h);
 
 
-        double area = ef *  eh;
+        double area = ef * eh;
 
         return area;
     }

@@ -56,12 +56,16 @@ public class Runner {
         Point g = new Point(x6, y6);
         Point h = new Point(x7, y7);
 
-        Rectangle rectangle = new Rectangle(e, f, g, h);
+        Rectangle rectangle = null;
+        try{
+            rectangle = new Rectangle(1,2, 3,4, 6,5, 4,3);
+        }
+        catch (RectangleException ex){
+
+        }
         System.out.println("Rectangle area: " + rectangle.countArea());
 
-        if (rectangle == null){
-            throw new NullPointerException("Rectangle can't be null");
-        }
+
 
         //вычисление площади круга
         /*
