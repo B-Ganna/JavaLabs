@@ -9,15 +9,12 @@ public class Rectangle {
     private Point h;
 
 
-    public Rectangle(Point e, Point f, Point g, Point h) throws RectangleException {
+    public Rectangle(Point e, Point f, Point g, Point h) {
         this.e = e;
         this.f = f;
         this.g = g;
         this.h = h;
 
-        boolean ok = false;
-        if (!ok)
-            throw new RectangleException();
     }
 
     public Point getPointE() {

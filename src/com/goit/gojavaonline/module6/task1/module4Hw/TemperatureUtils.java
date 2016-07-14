@@ -12,23 +12,27 @@ public class TemperatureUtils {
         return (degreeC * 5 / 9) + 32;
     }
 
-    public static double readDouble(String message) {
+    public static double readDouble(String message) throws RuntimeException {
         while (true) {
             try {
                 System.out.println();
                 Scanner scanner = new Scanner(System.in);
                 return scanner.nextDouble();
 
-            } catch (Exception E) {
-                System.out.println("Input is wrong");
+            } catch (RuntimeException e) {
+                System.out.println("Input is wrong! Only integers are allowed!! ");
+                System.out.print("Try again: ");
             }
 
         }
     }
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args)throws RuntimeException {
+
+        System.out.print("Enter Celsius degree: ");
         double c = readDouble("Enter Celsius degree: ");
+        System.out.print("Enter Farengeit degree: ");
         double f = readDouble("Enter Farengeit degree: ");
 
         System.out.println("Температура в градусах по Фаренгейту: " + convertToF(c));

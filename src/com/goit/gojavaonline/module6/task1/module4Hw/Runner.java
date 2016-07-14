@@ -57,12 +57,10 @@ public class Runner {
         Point h = new Point(x7, y7);
 
         Rectangle rectangle = null;
-        try{
-            rectangle = new Rectangle(1,2, 3,4, 6,5, 4,3);
-        }
-        catch (RectangleException ex){
 
-        }
+            //rectangle = new Rectangle(1,2, 3,4, 6,5, 4,3);
+
+
         System.out.println("Rectangle area: " + rectangle.countArea());
 
 
