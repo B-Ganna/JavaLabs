@@ -7,10 +7,11 @@ public class TemperatureUtils {
     }
 
     public static double convertToF(double degreeC) {
+
         return (degreeC * 5 / 9) + 32;
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args)  {
         double f = 0;
         double c = 0;
 

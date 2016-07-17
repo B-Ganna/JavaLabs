@@ -43,18 +43,15 @@ public class Runner {
             double y4 = 0;
             double x5 = 0;
             double y5 = 2;
-            double x6 = 0;
-            double y6 = 0;
             double x7 = 3;
             double y7 = 0;
 
 
             Point e = new Point(x4, y4);
             Point f = new Point(x5, y5);
-            Point g = new Point(x6, y6);
             Point h = new Point(x7, y7);
 
-            Rectangle rectangle = new Rectangle(e, f, g, h);
+            Rectangle rectangle = new Rectangle(e, f, h);
             System.out.println ("Rectangle area: "+ rectangle.countArea());
 
             //вычисление площади круга
