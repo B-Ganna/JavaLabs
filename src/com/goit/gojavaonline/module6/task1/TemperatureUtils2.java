@@ -11,8 +11,8 @@ public class TemperatureUtils2 {
     }
 
     public static void main(String[] args) throws TemperatureLimitException {
-        double f = 0;
-        double c = 0;
+        double f = -990;
+        double c = -990;
 
         if (f < -459.67) {
             try {
@@ -25,7 +25,7 @@ public class TemperatureUtils2 {
                 if (c > -273.15) {
                     System.out.println("Температура в градусах по Цельсию: " + convertToC(f));
                 } else {
-                    System.out.println("Absolute Celsius zero is: - 273.15");
+                    System.out.println("Absolute Celsius zero is: - 273.15. Try again!");
                 }
 
             }
