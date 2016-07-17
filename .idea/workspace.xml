@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1a8d5d1-4ad4-4e99-84e5-33fbde5bf585" name="Default" comment="fifth commit">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/goit/gojavaonline/module6/task1/Array.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/goit/gojavaonline/module6/task1/RunnerArray.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/goit/gojavaonline/module6/task1/TemperatureLimitException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/goit/gojavaonline/module6/task1/TemperatureUtils2.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/goit/gojavaonline/module6/task1/module4Hw/Point.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/goit/gojavaonline/module6/task1/module4Hw/Rectangle.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/goit/gojavaonline/module6/task1/module4Hw/Runner.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/goit/gojavaonline/module6/task1/module4Hw/TemperatureUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/goit/gojavaonline/module6/task1/module5Hw/Array.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/goit/gojavaonline/module6/task1/module5Hw/ArrayRunner.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/goit/gojavaonline/Module4/Task1/Rectangle.java" afterPath="$PROJECT_DIR$/src/com/goit/gojavaonline/Module4/Task1/Rectangle.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/goit/gojavaonline/module4/task1/Runner.java" afterPath="$PROJECT_DIR$/src/com/goit/gojavaonline/module4/task1/Runner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/goit/gojavaonline/module4/task2/TemperatureUtils.java" afterPath="$PROJECT_DIR$/src/com/goit/gojavaonline/module4/task2/TemperatureUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/goit/gojavaonline/module6/task1/TemperatureUtils2.java" afterPath="$PROJECT_DIR$/src/com/goit/gojavaonline/module6/task1/TemperatureUtils2.java" />
     </list>
     <ignored path="HomeWorks.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -104,8 +92,8 @@
       <file leaf-file-name="TemperatureUtils2.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/goit/gojavaonline/module6/task1/TemperatureUtils2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="180">
+              <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
               <folding>
                 <element signature="e#232#233#0" expanded="true" />
                 <element signature="e#277#278#0" expanded="true" />
@@ -1022,7 +1010,7 @@
       <workItem from="1468003232831" duration="940000" />
       <workItem from="1468419179751" duration="15879000" />
       <workItem from="1468570997545" duration="2521000" />
-      <workItem from="1468747304427" duration="8363000" />
+      <workItem from="1468747304427" duration="8489000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1465662962057</created>
@@ -1241,11 +1229,18 @@
       <option name="project" value="LOCAL" />
       <updated>1468512292080</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="fifth commit">
+      <created>1468761994565</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1468761994565</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="174944000" />
+    <option name="totallyTimeSpent" value="175070000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1611,8 +1606,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/goit/gojavaonline/module6/task1/TemperatureUtils2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="180">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
           <folding>
             <element signature="e#232#233#0" expanded="true" />
             <element signature="e#277#278#0" expanded="true" />

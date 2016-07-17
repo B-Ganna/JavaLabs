@@ -12,7 +12,7 @@ public class TemperatureUtils2 {
 
     public static void main(String[] args) throws TemperatureLimitException {
         double f = 0;
-        double c = -990;
+        double c = 0;
 
         if (f < -459.67) {
             try {
