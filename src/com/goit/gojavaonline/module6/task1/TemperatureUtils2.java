@@ -43,7 +43,7 @@ public class TemperatureUtils2 {
                 if (f > -459.67) {
                     System.out.println("Celsius temperature: " + convertToC(f));
                 } else {
-                    System.out.println("Absolute Farengheit zero is: - 459.67. Try again! Can't find Celsius!");
+                    System.out.println("Absolute Farengheit zero is: - 459.67. Can't find Celsius!");
                 }
             }
         }
