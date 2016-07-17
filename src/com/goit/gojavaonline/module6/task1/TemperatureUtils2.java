@@ -19,15 +19,15 @@ public class TemperatureUtils2 {
                 throw new TemperatureLimitException();
 
             } catch (TemperatureLimitException e) {
-                System.out.println("Absolute Farengheit zero is: - 459.67. Try again!");
+                System.out.println("Absolute Farengheit zero is: - 459.67. Can't find Celsius!");
                 return;
             } finally {
                 if (c > -273.15) {
-                    System.out.println("Температура в градусах по Цельсию: " + convertToC(f));
-                } else {
-                    System.out.println("Absolute Celsius zero is: - 273.15. Try again!");
-                }
+                    System.out.println("Farengheit temperature: " + convertToF(c));
 
+                } else {
+                    System.out.println("Absolute Celsius zero is: - 273.15. Can't find Farengheit!");
+                }
             }
         }
 
@@ -37,12 +37,17 @@ public class TemperatureUtils2 {
 
                 throw new TemperatureLimitException();
             } catch (TemperatureLimitException e) {
-                System.out.println("Absolute Celsius zero is: - 273.15. Try again!");
+                System.out.println("Absolute Celsius zero is: - 273.15. Can't find Farengheit!");
                 return;
             } finally {
-                System.out.println("Температура в градусах по Фаренгейту: " + convertToF(c));
-
+                if (f > -459.67) {
+                    System.out.println("Celsius temperature: " + convertToC(f));
+                } else {
+                    System.out.println("Absolute Farengheit zero is: - 459.67. Try again! Can't find Celsius!");
+                }
             }
         }
+        System.out.println("Celsius temperature: " + convertToC(f));
+        System.out.println("Farengheit temperature: " + convertToF(c));
     }
 }
