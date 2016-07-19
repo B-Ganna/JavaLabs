@@ -15,35 +15,24 @@ public class Array {
         return Arrays.toString(numbers);
     }
 
-    public int findMinimum() {
+    public int findMinimum() throws  IndexOutOfBoundsException {
         int min = 0;
-        try {
             min = numbers[0];
             for (int i = 0; i < numbers.length; i++) {
                 if (min > numbers[i])
                     min = numbers[i];
             }
-
-
-        } catch (IndexOutOfBoundsException e) {
-            System.out.println("Mistake! Index is out of bounds! Can't find minimum:");
-        }
         return min;
     }
 
-    public int findMaximum() {
+    public int findMaximum() throws IndexOutOfBoundsException{
         int max = 0;
-        try {
             max = numbers[0];
 
             for (int i = 0; i < numbers.length; i++) {
                 if (max < numbers[i])
                     max = numbers[i];
             }
-        } catch (IndexOutOfBoundsException e) {
-            System.out.println("Mistake! Index is out of bounds! Can't find maximum:");
-
-        }
 
         return max;
     }
