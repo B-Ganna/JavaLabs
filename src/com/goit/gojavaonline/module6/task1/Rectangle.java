@@ -1,5 +1,4 @@
-package com.goit.gojavaonline.module4.task1;
-
+package com.goit.gojavaonline.module6.task1;
 
 
 public class Rectangle {
@@ -22,7 +21,6 @@ public class Rectangle {
 
     public double countArea() {
         double area = sideA * sideB;
-
         return area;
     }
 }

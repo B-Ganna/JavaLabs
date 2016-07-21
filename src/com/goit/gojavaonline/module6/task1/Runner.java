@@ -9,34 +9,33 @@ public class Runner {
 
     public static void main(String[] args) {
 
-//массив
-        int[] array1 = new int[]{3, 9, 5, 2, 4, 6, 7};
-        Array array = new Array(array1);
-        try {
-            System.out.println("Исходный массив: " + array);
-            System.out.println("Minimum is: " + array.findMinimum());
-            System.out.println("Maximum is: " + array.findMaximum());
-            array.sort();
-            System.out.println("Sorted array: " + array);
-        } catch (IndexOutOfBoundsException e) {
-            System.out.println("Sorry, index is out of bounds!!");
-        }
-
 // конвертор температуры
         double c = 0;
         try {
-            System.out.println("Температура в градусах по Фаренгейту: " + convertToF(c));
+            System.out.println("Temperature " + c + "C in Farengheit = " + convertToF(c));
         } catch (TemperatureLimitException e) {
-            System.out.println("Incorrect argument: " + e.getMessage());
+            System.out.println("You entered following argument: " + c + "C." + e.getMessage());
         }
 
         double f = 0;
         try {
-            System.out.println("Температура в градусах по Фаренгейту: " + convertToC(f));
+            System.out.println("Temperature " + f + "F in Celsius = " + convertToC(f));
         } catch (TemperatureLimitException e) {
-            System.out.println("Incorrect argument: " + e.getMessage());
+            System.out.println("You entered following argument: " + f + "F." + e.getMessage());
         }
 
+//площадь прямоугольника
+        double a = 2;
+        double b = 3;
+        Rectangle rectangle = new Rectangle(a, b);
+
+        final ArgumentValidator validator = new ArgumentValidator();
+        try {
+            validator.Validate(a, b);
+            System.out.println("Rectangle square: " + rectangle.countArea());
+        } catch (InvalidArgumentException ex) {
+            System.out.println("You entered: " + ex.getSideA()+" and "+ex.getSideB()+". Rectangle's side can't be a negative argument!!");
+        }
     }
 }
 

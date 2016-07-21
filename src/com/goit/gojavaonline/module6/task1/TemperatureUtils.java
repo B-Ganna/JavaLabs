@@ -2,17 +2,23 @@ package com.goit.gojavaonline.module6.task1;
 
 
 public class TemperatureUtils {
-    public static double convertToC(double degreeF) throws TemperatureLimitException {
-        while (degreeF > -459.67) {
-            return (degreeF - 32) * 5 / 9;
+    public final static double ABSOLUTE_ZERO_IN_KELVIN = 0;
+    public final static double ABSOLUTE_ZERO_IN_FARENGHEIT = 0;
+    public final static double ABSOLUTE_ZERO_IN_CELSIUS = 0;
+
+    public static double convertToC(double degreeF) {
+
+        if (degreeF < ABSOLUTE_ZERO_IN_FARENGHEIT) {
+            throw new TemperatureLimitException(" This argument is less than absolute minimum temperature in Farengheit!");
         }
-        throw new TemperatureLimitException("absolute Farengheit zero is -459.67!!");
+        return (degreeF - 32) * 5 / 9;
     }
 
     public static double convertToF(double degreeC) throws TemperatureLimitException {
-        while (degreeC > -273.15) {
-            return (degreeC * 5 / 9) + 32;
+        if (degreeC < ABSOLUTE_ZERO_IN_CELSIUS) {
+            throw new TemperatureLimitException(" This argument is less than absolute minimum temperature in Celsius!");
         }
-        throw new TemperatureLimitException("absolute Celius zero is -273.15!!");
+        return (degreeC * 5 / 9) + 32;
+
     }
 }

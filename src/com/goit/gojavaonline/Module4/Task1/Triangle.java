@@ -7,6 +7,9 @@ public class Triangle {
     private Point c;
 
     public Triangle(Point a, Point b, Point c) {
+        if (null == a || null == b || null == c) {
+            throw new NullPointerException();
+        }
         this.a = a;
         this.b = b;
         this.c = c;
@@ -26,6 +29,7 @@ public class Triangle {
 
 
     public double countArea() {
+
         double ab = a.countDistanceTo(b);
         double bc = b.countDistanceTo(c);
         double ac = a.countDistanceTo(c);
@@ -36,5 +40,11 @@ public class Triangle {
 
 
         return area;
+    }
+
+    public static void ValidateTriangleSide(double ab, double bc, double cd) {
+        if (ab < 0 || bc < 0 || cd < 0) {
+            throw new IllegalArgumentException();
+        }
     }
 }

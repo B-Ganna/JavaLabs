@@ -39,31 +39,12 @@ public class Runner {
 
             // вычисление площади прямоугольника
 
-            double x4 = 0;
-            double y4 = 0;
-            double x5 = 0;
-            double y5 = 2;
-            double x7 = 3;
-            double y7 = 0;
-
-
-            Point e = new Point(x4, y4);
-            Point f = new Point(x5, y5);
-            Point h = new Point(x7, y7);
-
-            Rectangle rectangle = new Rectangle(e, f, h);
+            Rectangle rectangle = new Rectangle(2,3);
             System.out.println ("Rectangle area: "+ rectangle.countArea());
 
             //вычисление площади круга
-            double x8 = 0;
-            double y8 = 0;
-            double x9 = 0;
-            double y9 = 2;
 
-            Point s = new Point(x8, y8);
-            Point n = new Point(x9, y9);
-
-            Circle circle = new Circle(s,n);
+            Circle circle = new Circle(5);
             System.out.println ("Circle area: "+ circle.countArea());
 
         }
