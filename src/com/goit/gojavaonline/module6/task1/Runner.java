@@ -25,17 +25,12 @@ public class Runner {
         }
 
 //площадь прямоугольника
-        double a = 2;
-        double b = 3;
-        Rectangle rectangle = new Rectangle(a, b);
-
-        final ArgumentValidator validator = new ArgumentValidator();
-        try {
-            validator.Validate(a, b);
+       //try {
+            Rectangle rectangle = new Rectangle(-2, 3);
             System.out.println("Rectangle square: " + rectangle.countArea());
-        } catch (InvalidArgumentException ex) {
-            System.out.println("You entered: " + ex.getSideA()+" and "+ex.getSideB()+". Rectangle's side can't be a negative argument!!");
-        }
+        //} catch (InvalidArgumentException ex) {
+            //System.out.println("You entered: " + ex.getSideA()+" and "+ex.getSideB()+". Rectangle's side can't be a negative argument!!");
+        //}
     }
 }
 

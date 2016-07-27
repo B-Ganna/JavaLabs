@@ -7,8 +7,16 @@ public class Rectangle {
     private double sideB;
 
     public Rectangle(double sideA, double sideB) {
+        Rectangle.validate(sideA, sideB);
         this.sideA = sideA;
         this.sideB = sideB;
+
+    }
+
+    private static void validate(double sideA, double sideB) {
+        if (sideA < 0 || sideB < 0) {
+            throw new InvalidArgumentException(sideA, sideB, "Rectangle's side can't be a negative agrument!!");
+        }
     }
 
     public double getSideA() {
