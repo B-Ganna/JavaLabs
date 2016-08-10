@@ -1,9 +1,10 @@
 package com.goit.gojavaonline.module6.task2;
 
 
-class Guitar extends MusicInstruments {
-    public Guitar(String name) {
+class Trumpet extends MusicInstruments {
+    public Trumpet(String name) {
         super(name);
     }
+
 
 }

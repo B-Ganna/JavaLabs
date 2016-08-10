@@ -8,65 +8,48 @@ import java.util.Map;
 
 public class Runner {
     public static void main(String[] args) {
-        MusicShop musicShop = new MusicShop();
+        List<MusicInstruments> musicInstruments = new ArrayList<>();
 
-        ArrayList<Guitar> guitars = new ArrayList<>();
-        for (int i = 0; i < 16; i++) {
-            guitars.add(new Guitar());
-        }
-        musicShop.setGuitars(guitars);
-
-        ArrayList<Piano> pianos = new ArrayList<>();
         for (int i = 0; i < 2; i++) {
-            pianos.add(new Piano());
+            musicInstruments.add(new Piano("piano"));
         }
-        musicShop.setPianos(pianos);
-
-        ArrayList<Pipe> pipes = new ArrayList<>();
+        for (int i = 0; i < 16; i++) {
+            musicInstruments.add(new Guitar("guitar"));
+        }
         for (int i = 0; i < 7; i++) {
-            pipes.add(new Pipe());
+            musicInstruments.add(new Guitar("trumpet"));
         }
-        musicShop.setPipes(pipes);
 
-        System.out.println(musicShop);
-
+        MusicShop musicShop = new MusicShop(musicInstruments);
         Map<String, Integer> order = new HashMap<>();
-        order.put("guitar", 7);
-        order.put("pipe", 2);
+        System.out.println("Now in stock: " + musicShop.showInstruments() + "\n");
 
-        //int numberOfGuitarsToRemove = order.get("guitar");
-        List<MusicInstruments> guitarsToRemove = prepareOrder(musicShop, order);
-        List<MusicInstruments> pipesToRemove = prepareOrder(musicShop, order);
+        try {
+            List<MusicInstruments> readyOrder;
+            order.put("guitar", 7);
+            order.put("trumpet", 2);
+            readyOrder = musicShop.prepareInstruments(order);
+            System.out.println("Your order: " + readyOrder);
+            System.out.println("Now in stock: " + musicShop.showInstruments() + "\n");
+            order.clear();
 
-        System.out.println("Removed guitars: " + guitarsToRemove.size());
-        System.out.println(musicShop);
-    }
+            order.put("piano",1);
+            readyOrder = musicShop.prepareInstruments(order);
+            System.out.println("Your order: " + readyOrder);
+            System.out.println("Now in stock: " + musicShop.showInstruments() + "\n");
+            order.clear();
 
-   public static List<MusicInstruments> prepareOrder(MusicShop musicShop, Map<String, Integer> order) {
+            order.put("piano",1);
+            order.put("guitar",9);
+            order.put("trumpet",6);
+            readyOrder = musicShop.prepareInstruments(order);
+            System.out.println("Your order: " + readyOrder);
+            System.out.println("Now in stock: " + musicShop.showInstruments() + "\n");
+            order.clear();
+        } catch (OutOfStockException ex) {
+        System.out.println("Item "+ex.getName()+", in an amount of "+ex.getNumber()+" - is out of stock!"+"\n"+" Correct your order!");
+        }
 
-        ArrayList<MusicInstruments> result = new ArrayList<>();
-
-        List<Guitar> guitars = musicShop.getGuitars();
-        int numberOfGuitarsToRemove = order.get("guitar");
-        if (musicShop.getGuitars().size() < numberOfGuitarsToRemove) throw new IllegalArgumentException();
-
-        List<Guitar> guitarsToRemove = musicShop.getGuitars().subList(0, numberOfGuitarsToRemove);
-        List<Guitar> guitarsToStay = musicShop.getGuitars().subList(numberOfGuitarsToRemove, guitars.size());
-
-        musicShop.setGuitars(guitarsToStay);
-        result.addAll(guitarsToRemove);
-
-        /*List<Pipe> pipes = musicShop.getPipes();
-        int numberOfPipesToRemove = order.get("pipe");
-        if (musicShop.getPipes().size() < numberOfPipesToRemove) throw new IllegalArgumentException();
-
-        List<Pipe> pipesToRemove = musicShop.getPipes().subList(0, numberOfPipesToRemove);
-        List<Pipe> pipesToStay = musicShop.getPipes().subList(numberOfPipesToRemove, pipes.size());
-
-        musicShop.setPipes(pipesToStay);
-        result.addAll(pipesToRemove);*/
-
-        return result;
 
     }
 }

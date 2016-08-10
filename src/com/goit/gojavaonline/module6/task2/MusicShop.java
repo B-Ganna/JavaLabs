@@ -1,45 +1,87 @@
 package com.goit.gojavaonline.module6.task2;
 
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 public class MusicShop {
-    List<Guitar> guitars;
-    List<Piano> pianos;
-    List<Pipe> pipes;
 
-    public List<Guitar> getGuitars() {
-        return guitars;
+
+    private List<MusicInstruments> musicInstruments = new ArrayList<>();
+
+    public MusicShop(List<MusicInstruments> musicInstruments) {
+        this.musicInstruments = musicInstruments;
     }
 
-    public void setGuitars(List<Guitar> guitars) {
-        this.guitars = guitars;
-    }
-
-    public List<Piano> getPianos() {
-        return pianos;
-    }
-
-    public void setPianos(List<Piano> pianos) {
-        this.pianos = pianos;
-    }
-
-    public List<Pipe> getPipes() {
-        return pipes;
-    }
-
-    public void setPipes(List<Pipe> pipes) {
-        this.pipes = pipes;
-    }
-
-    @Override
-    public String toString() {
-        return "MusicShop{" +
-                "guitars=" + guitars.size() +
-                ", pianos=" + pianos.size() +
-                ", pipes=" + pipes.size() +
-                '}';
+    public boolean validate(final String name, final int number) {
+        for (MusicInstruments instruments : musicInstruments) {
+            String instrumentName = instruments.getType();
+            if (instrumentName.equals(name)) {
+                if (number > 0 && number <= countByName(name)) {
+                    return true;
+                } else {
+                    throw new OutOfStockException(name, number);
+                }
+            }
+        }
+        return true;
     }
 
 
+    private List<MusicInstruments> selectInstruments(final String name, final int number) {
+        int counter = number;
+        List<MusicInstruments> selected = new ArrayList<>();
+        for (MusicInstruments instruments : musicInstruments) {
+            String currentName = instruments.getType();
+            if (counter == 0) {
+                break;
+            } else if (currentName.equals(name)) {
+                selected.add(instruments);
+                counter--;
+            }
+        }
+        return selected;
+    }
+
+
+    public List<MusicInstruments> prepareInstruments(Map<String, Integer> order) {
+        List<MusicInstruments> instrumentsToRemove = new ArrayList<>();
+        Set<String> names = order.keySet();
+        for (String name : names) {
+            if (validate(name, order.get(name))) {
+                instrumentsToRemove.addAll(selectInstruments(name, order.get(name)));
+            }
+            musicInstruments.removeAll(instrumentsToRemove);
+        }
+        return instrumentsToRemove;
+    }
+
+    public String showInstruments() {
+        String instrumentString = "";
+        int count = 0;
+        int sameNames = 1;
+        while (count < musicInstruments.size() - 1) {
+            if (musicInstruments.get(count).getType().equals(musicInstruments.get(count + 1).getType())) {
+                sameNames++;
+            } else {
+                instrumentString += musicInstruments.get(count).getType() + ": " + sameNames + ", ";
+                sameNames = 1;
+            }
+            count++;
+        }
+        instrumentString += musicInstruments.get(count - 1).getType() + ": " + sameNames + ", ";
+        return instrumentString;
+    }
+
+    private int countByName(String name) {
+        int count = 0;
+        for (MusicInstruments instruments : musicInstruments) {
+            if (instruments.getType().equals(name)) {
+                count++;
+            }
+        }
+        return count;
+    }
 }
