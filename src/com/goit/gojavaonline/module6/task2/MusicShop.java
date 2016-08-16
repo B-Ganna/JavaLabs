@@ -15,7 +15,7 @@ public class MusicShop {
         this.musicInstruments = musicInstruments;
     }
 
-    public boolean validate(final String name, final int number) {
+    public boolean validate(final String name, final int number) throws OutOfStockException, InstrumentDoesNotExist {
         for (MusicInstruments instruments : musicInstruments) {
             String instrumentName = instruments.getType();
             if (instrumentName.equals(name)) {
@@ -26,7 +26,7 @@ public class MusicShop {
                 }
             }
         }
-        return true;
+        throw new InstrumentDoesNotExist(name);
     }
 
 
