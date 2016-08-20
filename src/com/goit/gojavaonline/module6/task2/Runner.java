@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.function.Predicate;
 
 public class Runner {
     public static void main(String[] args) {
@@ -31,24 +30,8 @@ public class Runner {
             order.put("trumpet", 2);
             readyOrder = musicShop.prepareInstruments(order);
 
-            long numberOfGuitars = readyOrder.stream()
-                    .filter(new Predicate<MusicInstruments>() {
-                        @Override
-                        public boolean test(MusicInstruments musicInstruments) {
-                            return musicInstruments.getType().equals("guitar");
-                        }
-                    })
-                    .count();
-
-            long numberOfTrumpets = readyOrder.stream()
-                    .filter(new Predicate<MusicInstruments>() {
-                        @Override
-                        public boolean test(MusicInstruments musicInstruments) {
-                            return musicInstruments.getType().equals("trumpet");
-                        }
-                    })
-                    .count();
-
+            long numberOfGuitars = getNumberOfGuitars(readyOrder);
+            long numberOfTrumpets = getNumberOfTrumpets(readyOrder);
             System.out.println("Your order: guitar: " + numberOfGuitars + ", " + "trumpet: " + numberOfTrumpets);
             order.clear();
             System.out.println("Now in stock: " + musicShop.showInstruments() + "\n");
@@ -56,14 +39,7 @@ public class Runner {
 
             order.put("piano", 1);
             readyOrder = musicShop.prepareInstruments(order);
-            long numberOfPianos = readyOrder.stream()
-                    .filter(new Predicate<MusicInstruments>() {
-                        @Override
-                        public boolean test(MusicInstruments musicInstruments) {
-                            return musicInstruments.getType().equals("piano");
-                        }
-                    })
-                    .count();
+            long numberOfPianos = getNumberOfPianos(readyOrder);
 
             System.out.println("Your order: piano: " + numberOfPianos);
             order.clear();
@@ -82,6 +58,25 @@ public class Runner {
         } catch (InstrumentDoesNotExist ex) {
             System.out.println("Instrument does not exist: " + ex.getName());
         }
+    }
+
+    private static long getNumberOfPianos(List<MusicInstruments> readyOrder) {
+        return readyOrder.stream()
+                .filter(MusicInstruments -> MusicInstruments.getType().equals("piano"))
+                .count();
+    }
+
+    private static long getNumberOfTrumpets(List<MusicInstruments> readyOrder) {
+        return readyOrder.stream()
+                .filter(MusicInstruments -> MusicInstruments.getType().equals("trumpet"))
+                .count();
+    }
+
+    private static long getNumberOfGuitars(List<MusicInstruments> readyOrder) {
+        return readyOrder.stream()
+                .filter(MusicInstruments -> MusicInstruments.getType().equals("guitar"))
+                .count();
+
     }
 }
 

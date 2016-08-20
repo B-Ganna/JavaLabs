@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.function.Predicate;
 
 public class MusicShop {
 
@@ -83,5 +84,15 @@ public class MusicShop {
             }
         }
         return count;
+    }
+    private static long getNumberOfGuitars(List<MusicInstruments> readyOrder) {
+        return readyOrder.stream()
+                .filter(new Predicate<MusicInstruments>() {
+                    @Override
+                    public boolean test(MusicInstruments musicInstruments) {
+                        return musicInstruments.getType().equals("guitar");
+                    }
+                })
+                .count();
     }
 }
