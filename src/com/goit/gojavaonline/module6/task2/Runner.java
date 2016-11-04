@@ -20,6 +20,9 @@ public class Runner {
             musicInstruments.add(new Guitar("trumpet"));
         }
 
+        RegisterBook rb = new RegisterBook();
+
+
         MusicShop musicShop = new MusicShop(musicInstruments);
         Map<String, Integer> order = new HashMap<>();
         System.out.println("Now in stock: " + musicShop.showInstruments() + "\n");
@@ -38,6 +41,7 @@ public class Runner {
 
 
             order.put("piano", 1);
+
             readyOrder = musicShop.prepareInstruments(order);
             long numberOfPianos = getNumberOfPianos(readyOrder);
 
@@ -76,7 +80,7 @@ public class Runner {
         return readyOrder.stream()
                 .filter(MusicInstruments -> MusicInstruments.getType().equals("guitar"))
                 .count();
-
     }
+
 }
 

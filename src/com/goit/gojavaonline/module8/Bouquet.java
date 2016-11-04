@@ -1,6 +1,8 @@
 package com.goit.gojavaonline.module8;
 
 
+import java.util.ArrayList;
+
 public class Bouquet {
-    Flower[] flowers;
+    ArrayList<Flower> bouquet = new ArrayList<>();
 }

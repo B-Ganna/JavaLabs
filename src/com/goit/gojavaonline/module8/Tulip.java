@@ -1,6 +1,8 @@
 package com.goit.gojavaonline.module8;
 
 
+import java.util.Formatter;
+
 public class Tulip extends Flower {
     private String country;
 
@@ -11,5 +13,16 @@ public class Tulip extends Flower {
 
     public String getCountry() {
         return country;
+    }
+
+    public String getSpecificField() {
+        return country;
+    }
+
+    @Override
+    protected Formatter title() {
+        Formatter formatter = super.title();
+        formatter.format("%25s", "Country");
+        return formatter;
     }
 }

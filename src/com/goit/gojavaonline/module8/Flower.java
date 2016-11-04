@@ -8,7 +8,7 @@ public class Flower {
     protected String color;
     protected int price;
 
-    public Flower(String name, String color, int price) {
+    protected Flower(String name, String color, int price) {
         this.name = name;
         this.color = color;
         this.price = price;
@@ -26,27 +26,21 @@ public class Flower {
         return name;
     }
 
-    public int nameComparator(Flower o) {
-        return this.price - o.price;
-
+    public String getSpecificField() {
+        return "Error!";
     }
 
-    @Override
-    public String toString() {
-        return "Flower{" +
-                "name='" + name + '\'' +
-                ", color='" + color + '\'' +
-                ", price=" + price +
-                '}';
-    }
 
-    protected Formatter getHeader() {
+    protected Formatter title() {
         Formatter formatter = new Formatter();
-        formatter.format("%20.20s", "Name");
-        formatter.format("%20.20s", "Size");
+        formatter.format("%25s", "Name");
+        formatter.format("%25s", "Color");
+        formatter.format("%25s", "Price");
         return formatter;
     }
-    public int compareTo(Flower o){
-        return this.price - o.price;
-    }
+
+    //public int compareTo(Flower o) {
+     //   return this.price - o.price;
+    //}
+
 }
