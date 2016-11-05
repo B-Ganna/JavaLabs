@@ -33,14 +33,9 @@ public class Flower {
 
     protected Formatter title() {
         Formatter formatter = new Formatter();
-        formatter.format("%25s", "Name");
-        formatter.format("%25s", "Color");
-        formatter.format("%25s", "Price");
+        formatter.format("|%10.10s", "Name");
+        formatter.format("|%10.10s", "Color");
+        formatter.format("|%10.10s", "Price");
         return formatter;
     }
-
-    //public int compareTo(Flower o) {
-     //   return this.price - o.price;
-    //}
-
 }

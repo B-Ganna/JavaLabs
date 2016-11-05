@@ -32,10 +32,10 @@ public abstract class FlowerUtils {
 
     private static void printCurrentFlower(Flower element) {
         Formatter formatter = new Formatter();
-        formatter.format("%25s", element.getName());
-        formatter.format("%25s", element.getColor());
-        formatter.format("%25s", element.getPrice());
-        formatter.format("%25s", element.getSpecificField());
+        formatter.format("|%10.10s", element.getName());
+        formatter.format("|%10.10s", element.getColor());
+        formatter.format("|%10.10s", element.getPrice());
+        formatter.format("|%10.10s|", element.getSpecificField());
         System.out.println(formatter);
     }
 }

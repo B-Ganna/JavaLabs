@@ -22,7 +22,7 @@ public class Tulip extends Flower {
     @Override
     protected Formatter title() {
         Formatter formatter = super.title();
-        formatter.format("%25s", "Country");
+        formatter.format("|%10.10s", "Country");
         return formatter;
     }
 }

@@ -22,7 +22,7 @@ public class Camomile extends Flower {
     @Override
     protected Formatter title() {
         Formatter formatter = super.title();
-        formatter.format("%25s", "Medical");
+        formatter.format("|%10.10s|", "Medical");
         return formatter;
     }
 }

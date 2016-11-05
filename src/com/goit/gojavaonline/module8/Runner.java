@@ -30,10 +30,13 @@ public class Runner {
         sortedByPrice.addAll(bouquet);
 
         System.out.println("Flowers unsorted: ");
+        System.out.println("---------------------------------------------");
         FlowerUtils.printTable(bouquet);
         System.out.println("\n"+"Sorted by Name: ");
+        System.out.println("---------------------------------------------");
         FlowerUtils.printTable(sortedByName);
         System.out.println("\n"+"Sorted by Price: ");
+        System.out.println("---------------------------------------------");
         FlowerUtils.printTable(sortedByPrice);
 
 

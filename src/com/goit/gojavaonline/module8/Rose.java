@@ -21,7 +21,7 @@ public class Rose extends Flower {
     @Override
     protected Formatter title() {
         Formatter formatter = super.title();
-        formatter.format("%25s", "Aroma");
+        formatter.format("|%10.10s", "Aroma");
         return formatter;
     }
 }
