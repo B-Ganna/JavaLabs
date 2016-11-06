@@ -4,7 +4,7 @@ package com.goit.gojavaonline.module9;
 public class CaesarCryptoUtils {
     private static final int LETTERS_IN_RUSSIAN_ALPHABET = 33;
 
-    public static String encript(String plainText, int keyNumber) {
+    public static String encript(String messageText, int keyNumber) {
         if (keyNumber > LETTERS_IN_RUSSIAN_ALPHABET) {
             keyNumber = keyNumber % LETTERS_IN_RUSSIAN_ALPHABET;
         } else if (keyNumber < 0) {
@@ -12,8 +12,8 @@ public class CaesarCryptoUtils {
         }
 
         String cipherText = "";
-        for (int i = 0; i < plainText.length(); i++) {
-            char letter = plainText.charAt(i);
+        for (int i = 0; i < messageText.length(); i++) {
+            char letter = messageText.charAt(i);
             if (Character.isLetter(letter)) {
                 if (Character.isLowerCase(letter)) {
                     char cipheredLetter = (char) (letter + keyNumber);
@@ -39,7 +39,7 @@ public class CaesarCryptoUtils {
         return cipherText;
     }
 
-    public static String decript(String plainText, int keyNumber) {
+    public static String decript(String messageText, int keyNumber) {
         if (keyNumber > LETTERS_IN_RUSSIAN_ALPHABET) {
             keyNumber = keyNumber % LETTERS_IN_RUSSIAN_ALPHABET;
         } else if (keyNumber < 0) {
@@ -47,8 +47,8 @@ public class CaesarCryptoUtils {
         }
 
         String cipherText = "";
-        for (int i = 0; i < plainText.length(); i++) {
-            char letter = plainText.charAt(i);
+        for (int i = 0; i < messageText.length(); i++) {
+            char letter = messageText.charAt(i);
             if (Character.isLetter(letter)) {
                 if (Character.isLowerCase(letter)) {
                     char cipheredLetter = (char) (letter - keyNumber);
