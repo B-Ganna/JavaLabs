@@ -2,10 +2,12 @@ package com.goit.gojavaonline.module9;
 
 public class CaesarApp {
     public static void main(String[] args) {
-        String text = "Это алгоритм Цезаря";
-        String cipher = CaesarCryptoUtils.encript(text, 5);
-        String decrypted = CaesarCryptoUtils.decript(cipher, 5);
-        System.out.println(text + "\n" + cipher + "\n" + decrypted);
+        CaesaCryptograph caesaCryptograph = new CaesaCryptograph(1, "abcde");
+        String text = "xabcdez";
+        String encryptedText = caesaCryptograph.encrypt(text);
+        String decryptedText = caesaCryptograph.decrypt(encryptedText);
+        System.out.println(text + "\n" + encryptedText + "\n" + decryptedText);
+
 
     }
 }
