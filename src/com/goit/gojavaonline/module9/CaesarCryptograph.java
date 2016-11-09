@@ -1,11 +1,11 @@
 package com.goit.gojavaonline.module9;
 
 
-public class CaesaCryptograph {
+public class CaesarCryptograph {
     private int key;
     private final String alphabet;
 
-    public CaesaCryptograph(int key, String alphabet) {
+    public CaesarCryptograph(int key, String alphabet) {
         this.key = key;
         this.alphabet = alphabet;
     }
