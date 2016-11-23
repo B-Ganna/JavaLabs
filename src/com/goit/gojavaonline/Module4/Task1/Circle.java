@@ -13,7 +13,8 @@ public class Circle {
     }
 
     public double countArea() {
-        double area = Math.PI * Math.pow(radius, 2);
+        double area;
+        area = Math.PI * Math.pow(radius, 2);
         return area;
     }
 }

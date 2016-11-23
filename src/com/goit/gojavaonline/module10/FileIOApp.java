@@ -5,10 +5,10 @@ import com.goit.gojavaonline.module9.CaesarCryptograph;
 import java.io.File;
 import java.io.IOException;
 
-public class IOStreamApp {
+public class FileIOApp {
     public static void main(String[] args) throws IOException {
         CaesarCryptograph cryptograph = new CaesarCryptograph(3, "qwertyuiopasdfghjlzxc");
-        IOStreamOperations operations = new IOStreamOperations();
+        FileIO operations = new FileIO();
 
         File inputFile = new File("xandau.txt");
         File encryptedFile = new File("encryptedFile.txt");

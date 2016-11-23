@@ -6,7 +6,13 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class IOStreamOperations {
+public class FileIO {
+    /*private File fileName;
+
+    public FileIO(File fileName) {
+        this.fileName = fileName;
+    }*/
+
     public void write(final String data, final File file) throws IOException {
         FileWriter outputStream = new FileWriter(file);
         try {
